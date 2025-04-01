@@ -34,7 +34,7 @@
     "extra": {
         "branch-alias": {
             "dev-master": "2.5-dev",
-            "dev-develop": "2.6-dev"
+            "dev-develop": "52-2-1-dev"
         }
     },
     "autoload-dev": {
