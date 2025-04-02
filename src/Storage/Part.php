@@ -395,6 +395,7 @@ class Part implements RecursiveIterator, Part\PartInterface
      *
      * @return bool current element has children/is multipart
      */
+    #[\ReturnTypeWillChange]
     public function hasChildren()
     {
         $current = $this->current();
@@ -406,6 +407,7 @@ class Part implements RecursiveIterator, Part\PartInterface
      *
      * @return Part same as self::current()
      */
+    #[\ReturnTypeWillChange]
     public function getChildren()
     {
         return $this->current();
@@ -416,6 +418,7 @@ class Part implements RecursiveIterator, Part\PartInterface
      *
      * @return bool check if there's a current element
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
         if ($this->countParts === null) {
@@ -427,6 +430,7 @@ class Part implements RecursiveIterator, Part\PartInterface
     /**
      * implements Iterator::next()
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
         ++$this->iterationPos;
@@ -437,6 +441,7 @@ class Part implements RecursiveIterator, Part\PartInterface
      *
      * @return string key/number of current part
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
         return $this->iterationPos;
@@ -447,6 +452,7 @@ class Part implements RecursiveIterator, Part\PartInterface
      *
      * @return Part current part
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
         return $this->getPart($this->iterationPos);
@@ -455,6 +461,7 @@ class Part implements RecursiveIterator, Part\PartInterface
     /**
      * implements Iterator::rewind()
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         $this->countParts();

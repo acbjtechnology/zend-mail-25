@@ -56,6 +56,7 @@ class Mbox extends AbstractStorage
      * @return int number of messages
      * @throws \Zend\Mail\Storage\Exception\ExceptionInterface
      */
+    #[\ReturnTypeWillChange]
     public function countMessages()
     {
         return count($this->positions);

@@ -177,6 +177,7 @@ class AddressList implements Countable, Iterator
      *
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->addresses);
@@ -189,6 +190,7 @@ class AddressList implements Countable, Iterator
      * empty.
      * @see addresses
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         return reset($this->addresses);
@@ -199,6 +201,7 @@ class AddressList implements Countable, Iterator
      *
      * @return Address
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
         return current($this->addresses);
@@ -209,6 +212,7 @@ class AddressList implements Countable, Iterator
      *
      * @return string
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
         return key($this->addresses);
@@ -221,6 +225,7 @@ class AddressList implements Countable, Iterator
      * internal array pointer, or false if there are no more elements.
      * @see addresses
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
         return next($this->addresses);
@@ -231,6 +236,7 @@ class AddressList implements Countable, Iterator
      *
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
         $key = key($this->addresses);
