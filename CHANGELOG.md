@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 2.5.2 - 2015-09-10
+## 2.5.2-1 - 2015-09-10
 
 ### Added
 
@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
+- Fixes [ZF2016-04](https://framework.zend.com/security/advisory/ZF2016-04).
 - [#26](https://github.com/zendframework/zend-mail/pull/26) fixes the
   `ContentType` header to properly handle parameters with encoded values.
 - [#11](https://github.com/zendframework/zend-mail/pull/11) fixes the
